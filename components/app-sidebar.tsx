@@ -66,6 +66,11 @@ const data = {
       url: "#",
       icon: IconUsers,
     },
+    {
+      title: "Social Media",
+      url: "/social-media",
+      icon: IconUsers,
+    },
   ],
   navClouds: [
     {

@@ -114,7 +114,7 @@ export const schema = z.object({
   email: z.string(),
   phone: z.string(),
   address: z.string(),
-  industries: z.array(z.string()),
+  industries: z.array(z.any()),
   nr_of_workers: z.number(),
 })
 
@@ -187,7 +187,7 @@ const columns: ColumnDef<z.infer<typeof schema>>[] = [
     header: "Industry",
     cell: ({ row }) => (
       <Badge variant="outline" className="text-muted-foreground px-1.5">
-        {row.original.industries[0]}
+        {row.original.industries[0]?.name?.toString()}
       </Badge>
     ),
   },
