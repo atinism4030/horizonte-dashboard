@@ -1,3 +1,3 @@
-export const env  ={
-    apiurl: "http://localhost:3001"
+export const env = {
+    apiurl: "https://horizonte-api-cr8v.onrender.com"
 }
